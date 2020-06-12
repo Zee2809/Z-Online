@@ -22,5 +22,4 @@ $ ng serve -o
 
 # Z-Online
 
-# Ignore node modules
-/node_modules
+
