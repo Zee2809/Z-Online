@@ -46,4 +46,3 @@ testem.log
 Thumbs.db
 
 # Ignore node modules
-/node_modules

@@ -4,7 +4,7 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
+import {HomeComponent} from './components/home/home.component'
 import { FemalesComponent } from './components/items/females/females.component';
 import { MalesComponent } from './components/items/males/males.component';
 import { AllItemsComponent } from './components/items/all-items/all-items.component';
