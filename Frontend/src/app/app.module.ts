@@ -12,6 +12,10 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { SettingsComponent } from './components/settings/settings.component';
+import { SearchComponent } from './components/search/search.component';
+import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.component';
+import { FilterByComponent } from './components/filter-by/filter-by.component';
+
 
 @NgModule({
   declarations: [
@@ -23,7 +27,11 @@ import { SettingsComponent } from './components/settings/settings.component';
     CarouselComponent,
     NavbarComponent,
     ProfileComponent,
-    SettingsComponent
+    SettingsComponent,
+    SearchComponent,
+    ShoppingCartComponent,
+    FilterByComponent,
+
   ],
   imports: [
     BrowserModule,
