@@ -1,5 +1,5 @@
 .Shop-Name{
-    margin-top:20px;
+    margin-top:7px;
     font-family: "Times New Roman", Times, serif;
     font-size: 40px;
     letter-spacing: 5.8px;
@@ -14,3 +14,38 @@
 .shopping-bag{
    float:right
 }
+// @media (min-width: 576px){
+//     .jumbotron {
+//         padding: 1rem 2rem;
+//     }
+
+
+// .jumbotron {
+//     padding: -3rem 1rem;
+//     margin-bottom: 2rem;
+//     background-color: white;
+//     border-radius: 0.3rem;
+// }
+// }
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+   
+  }
+
+  /* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+    
+      .jumbotron {
+                padding: 1rem 2rem;
+            }
+        
+        
+        .jumbotron {
+            padding: -3rem 1rem;
+            margin-bottom: 2rem;
+            background-color: white;
+            border-radius: 0.3rem;
+        }
+
+  }
+

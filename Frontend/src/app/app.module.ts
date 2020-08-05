@@ -15,6 +15,8 @@ import { SettingsComponent } from './components/settings/settings.component';
 import { SearchComponent } from './components/search/search.component';
 import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.component';
 import { FilterByComponent } from './components/filter-by/filter-by.component';
+import { FooterComponent } from './components/footer/footer.component';
+
 
 
 @NgModule({
@@ -31,6 +33,8 @@ import { FilterByComponent } from './components/filter-by/filter-by.component';
     SearchComponent,
     ShoppingCartComponent,
     FilterByComponent,
+    FooterComponent,
+ 
 
   ],
   imports: [
