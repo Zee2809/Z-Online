@@ -1,53 +1,11 @@
-<div>
-        <div class="carousel">
-          <ul class="slides">
-            <input type="radio" name="radio-buttons" id="img-1" checked />
-            <li class="slide-container">
-              <div class="slide-image">
-                <img src="../../../assets//clothes//Dress.jpeg" >
-              </div>
-              <div class="carousel-controls">
-                <label for="img-3" class="prev-slide">
-                  <span>&lsaquo;</span>
-                </label>
-                <label for="img-2" class="next-slide">
-                  <span>&rsaquo;</span>
-                </label>
-              </div>
-            </li>
-            <input type="radio" name="radio-buttons" id="img-2" />
-            <li class="slide-container">
-              <div class="slide-image">
-                <img src="../../../assets/clothes/Men6.jpeg">
-              </div>
-              <div class="carousel-controls">
-                <label for="img-1" class="prev-slide">
-                  <span>&lsaquo;</span>
-                </label>
-                <label for="img-3" class="next-slide">
-                  <span>&rsaquo;</span>
-                </label>
-              </div>
-            </li>
-            <input type="radio" name="radio-buttons" id="img-3" />
-            <li class="slide-container">
-              <div class="slide-image">
-                <img src="../../../assets/clothes/Swimwear.jpg">
-              </div>
-              <div class="carousel-controls">
-                <label for="img-2" class="prev-slide">
-                  <span>&lsaquo;</span>
-                </label>
-                <label for="img-1" class="next-slide">
-                  <span>&rsaquo;</span>
-                </label>
-              </div>
-            </li>
-            <div class="carousel-dots">
-              <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
-              <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
-              <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
-            </div>
-          </ul>
-        </div>
-      </div>
+<mdb-carousel [isControls]="false" [animation]="'slide'">
+  <mdb-carousel-item>
+    <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg" alt="First slide">
+  </mdb-carousel-item>
+  <mdb-carousel-item>
+    <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(129).jpg" alt="Second slide">
+  </mdb-carousel-item>
+  <mdb-carousel-item>
+    <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(70).jpg" alt="Third slide">
+  </mdb-carousel-item>
+</mdb-carousel>

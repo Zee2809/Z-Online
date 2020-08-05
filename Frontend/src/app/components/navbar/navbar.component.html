@@ -1,24 +1,40 @@
-<div class="jumbotron jumbotron fixed-top">
-  <div class="container">
-    <div class="row">
-      <div class="searchbar col-6">
-        <app-search></app-search>
-      </div>
+<!--Navbar-->
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark cyan" [containerInside]="false">
 
-      <div class=" col-6 ">
-        <div class="shopping-bag">
-   
-                <i class="fas fa-shopping-bag">
-                    <p>My bag</p>
-                </i>
-        </div>
-        <h2 class="Shop-Name">Z-Online</h2>
-      </div>
-
-      <div class="filter-clothes-by">
-        <app-filter-by></app-filter-by>
-      </div>
-    </div>
-
-  </div>
-</div>
+    <!-- Navbar brand -->
+    <mdb-navbar-brand><a class="navbar-brand" ><h2>Vodoo</h2></a></mdb-navbar-brand>
+  
+    <!-- Collapsible content -->
+    <links>
+  
+      <!-- Links -->
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link waves-light" mdbWavesEffect><mdb-icon fas icon="home"></mdb-icon> Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+                <a class="nav-link waves-light" mdbWavesEffect><mdb-icon fas icon="info-circle"></mdb-icon> About Us</a>
+              </li>
+        <li class="nav-item">
+          <a class="nav-link waves-light" mdbWavesEffect><mdb-icon fas icon="cog"></mdb-icon> Request Order</a>
+        </li>
+  
+        <!-- Dropdown -->
+        <li class="nav-item dropdown" dropdown>
+          <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+                <mdb-icon fas icon="tshirt"></mdb-icon> Our Products<span class="caret"></span></a>
+          <div *dropdownMenu class="dropdown-menu dropdown-menu-right dropdown dropdown-primary" role="menu">
+            <a class="dropdown-item waves-light" mdbWavesEffect href="#">T-Shirts</a>
+            <a class="dropdown-item waves-light" mdbWavesEffect href="#">Sweaters</a>
+            <a class="dropdown-item waves-light" mdbWavesEffect href="#">Hoodies</a>
+            <a class="dropdown-item waves-light" mdbWavesEffect href="#">Crop Tops</a>
+          </div>
+        </li>
+  
+      </ul>
+      <!-- Links -->
+    </links>
+    <!-- Collapsible content -->
+  
+  </mdb-navbar>
+  <!--/.Navbar-->
