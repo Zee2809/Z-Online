@@ -18,8 +18,6 @@ import { AboutModule } from './components/about/about.module';
     AppComponent,
     NavbarComponent,
     FooterComponent
-    
-    
   ],
   imports: [
     BrowserModule,
