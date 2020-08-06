@@ -1,21 +1,21 @@
+import { FormsModule } from '@angular/forms';
+import { ShoppingCartComponent } from './shopping-cart.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AboutComponent } from './about.component';
-import { FormsModule } from '@angular/forms';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
-import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 @NgModule({
-  declarations: [AboutComponent],
+  declarations: [ShoppingCartComponent],
   imports: [
     CommonModule,
     FormsModule,
     BrowserModule,
     MDBBootstrapModule.forRoot(),
     RouterModule.forChild([
-      {path:'about',component:AboutComponent}
+      {path:'placeOrder',component:ShoppingCartComponent}
     ])
   ]
 })
-export class AboutModule { }
+export class ShoppingCartModule { }
