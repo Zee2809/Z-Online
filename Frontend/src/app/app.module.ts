@@ -1,3 +1,4 @@
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { MDBBootstrapModule, CarouselModule } from 'angular-bootstrap-md';
@@ -9,7 +10,7 @@ import {FooterComponent} from './components/footer/footer.component'
 import { HomeModule } from './components/home/home.module';
 import { AboutModule } from './components/about/about.module';
 import { ShoppingCartModule } from './components/shopping-cart/shopping-cart.module';
-
+import { ProductsModule } from './components/products/products.module';
 
 
 
@@ -18,7 +19,7 @@ import { ShoppingCartModule } from './components/shopping-cart/shopping-cart.mod
   declarations: [
     AppComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
@@ -26,8 +27,9 @@ import { ShoppingCartModule } from './components/shopping-cart/shopping-cart.mod
     AppRoutingModule,
     HomeModule,
     AboutModule,
-    ShoppingCartModule
-  ],
+    ShoppingCartModule,
+    ProductsModule 
+   ],
   
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+
+  frontend:
+    build: ./frontend
+    ports:
+    - "4200:4200"
+    container_name: z-online
+
+  mongo:
+    image: mongo
+    ports:
+      - '27017:27017' 
+    volumes:
+      - mongo_data:/data/db
+
+volumes:
+  mongo_data:
