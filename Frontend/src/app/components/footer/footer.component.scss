@@ -3,6 +3,9 @@
 #social {
   margin: 20px 10px;
 }
+.teal {
+  background-color: #4bc970!important;
+}
 
 .smGlobalBtn {
   /* global button class */
@@ -28,7 +31,9 @@
 
 /* facebook button class*/
 .facebookBtn {
-  background: #4060A5;
+  color: #4060A5;
+  background: #fff;
+  border-color: #4060A5;
 }
 
 .facebookBtn:before {
@@ -38,16 +43,13 @@
   /* add facebook icon */
 }
 
-.facebookBtn:hover {
-  color: #4060A5;
-  background: #fff;
-  border-color: #4060A5;
-  /* change the border color on mouse hover */
-}
+
 
 /* twitter button class*/
 .twitterBtn {
-  background: #00ABE3;
+  color: #4060A5;
+  background: #fff;
+  border-color: #00ABE3;
 }
 
 .twitterBtn:before {
@@ -57,11 +59,7 @@
 
 }
 
-.twitterBtn:hover {
-  color: #00ABE3;
-  background: #fff;
-  border-color: #00ABE3;
-}
+
 
 /* google plus button class*/
 .googleplusBtn {
