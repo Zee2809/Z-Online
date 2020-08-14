@@ -6,5 +6,6 @@ const orderController =require("./order-controller")
 router.post(
     '/',orderController.PostOrder
 );
+router.get('/',orderController.GetOrder)
 
 module.exports = router;

@@ -30,30 +30,18 @@ exports.PostOrder = async (req, res) => {
           }]
 
     })
+
     await post.save()
     res.send(post)
     console.log(post);
   }
 
-//   email:String,
-//   city:String,
-//   province:String,
-//   township:String,
-//   street:String,
-//   code:String,
-//   product :[{
-//       hoodie:String,
-//       sweater:String,
-//       tshirt:String,
-//       cropjersy:String
-//   }]
-
-//   router.get("order", async (req, res) => {
-//     const post = await order.findOne({ post })
-//     res.send(post)
-//     console.log(post);
-//   })
-
+    exports.GetOrder = async(req,res)=>{
+      const get = await order.find({})
+     res.send(get);
+     console.log(get);
+    }
+ 
     
 
 
