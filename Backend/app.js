@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const bodyParser = require("body-parser");
 const DBConnection = require('./database/mongo');
-
+var cors = require('cors')
 
 /* this will let us get the data from a POST
 this will let us get the data from a POST 
@@ -12,7 +12,10 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(bodyParser.json());
 
-
+// ajust cors
+ 
+app.use(cors())
+ 
 
 // Connect mongodb
 DBConnection()

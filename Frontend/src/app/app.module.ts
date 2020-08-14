@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { MDBBootstrapModule, CarouselModule } from 'angular-bootstrap-md';
 import { AppRoutingModule } from './app-routing.module';
+import {HttpClientModule} from '@angular/common/http'
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -28,7 +29,8 @@ import { ProductsModule } from './components/products/products.module';
     HomeModule,
     AboutModule,
     ShoppingCartModule,
-    ProductsModule 
+    ProductsModule ,
+    HttpClientModule,
    ],
   
   providers: [],
