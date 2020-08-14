@@ -4,10 +4,13 @@ const express = require("express")
 const router = express.Router()
 var newOrder = new order();
 
+
 // router.get('/order',async(req,res,next)=>{
 //     const post = await order.find()
 //     res.send(post)
 // })
+
+
 
 exports.PostOrder = async (req, res) => {
     const post = new order({

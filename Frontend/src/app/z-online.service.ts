@@ -27,20 +27,20 @@ export class ZOnlineService {
     PRODUCT: []
   ) {
     let PlaceOrder: ShoppingCart = new ShoppingCart();
-    (PlaceOrder.name = NAME),
-      (PlaceOrder.surname = SURNAME),
-      (PlaceOrder.gender = GENDER),
-      (PlaceOrder.phone = PHONE),
-      (PlaceOrder.email = EMAIL),
-      (PlaceOrder.city = CITY),
-      (PlaceOrder.province = PROVINCE),
-      (PlaceOrder.township = TOWNSHIP),
-      (PlaceOrder.street = STREET),
-      (PlaceOrder.code = CODE),
-      (PlaceOrder.product = PRODUCT);
+    PlaceOrder.name = NAME; 
+    PlaceOrder.surname = SURNAME;
+    PlaceOrder.gender = GENDER;
+    PlaceOrder.phone = PHONE;
+    PlaceOrder.email = EMAIL;
+    PlaceOrder.city = CITY;
+    PlaceOrder.province = PROVINCE;
+    PlaceOrder.township = TOWNSHIP;
+    PlaceOrder.street = STREET;
+    PlaceOrder.code = CODE;
+    PlaceOrder.product = PRODUCT;
 
     return this.http.post<ShoppingCartResponse>(
-      `${this.APIURL}/order`,
+     `${this.APIURL}/order` ,
       PlaceOrder
     );
 

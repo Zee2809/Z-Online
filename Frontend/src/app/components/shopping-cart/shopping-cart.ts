@@ -11,7 +11,8 @@ street:string;
 code:string;
 product:[]
 
-    constructor(){
+
+constructor(){
 this.name = "";
 this.surname= "";
 this.gender = "";
