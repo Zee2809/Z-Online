@@ -16,12 +16,12 @@ const OrderDetails = new Schema({
     township:String,
     street:String,
     code:String,
-    product :[{
-        hoodie:String,
-        sweater:String,
-        tshirt:String,
-        cropjersy:String
-    }]
+    // product :[{
+    //     hoodie:String,
+    //     sweater:String,
+    //     tshirt:String,
+    //     cropjersy:String
+    // }]
   }); 
   module.exports = mongoose.model('OrderDetails', OrderDetails);
 

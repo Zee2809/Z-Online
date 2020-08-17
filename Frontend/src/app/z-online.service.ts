@@ -13,47 +13,9 @@ export class ZOnlineService {
 
   constructor(private http: HttpClient) {}
 
-  PlaceOrder(
-    NAME: string,
-    SURNAME: string,
-    GENDER: string,
-    PHONE: string,
-    EMAIL: string,
-    CITY: string,
-    PROVINCE: string,
-    TOWNSHIP: string,
-    STREET: string,
-    CODE: string,
-    PRODUCT: []
-  ) {
-    let PlaceOrder: ShoppingCart = new ShoppingCart();
-    PlaceOrder.name = NAME; 
-    PlaceOrder.surname = SURNAME;
-    PlaceOrder.gender = GENDER;
-    PlaceOrder.phone = PHONE;
-    PlaceOrder.email = EMAIL;
-    PlaceOrder.city = CITY;
-    PlaceOrder.province = PROVINCE;
-    PlaceOrder.township = TOWNSHIP;
-    PlaceOrder.street = STREET;
-    PlaceOrder.code = CODE;
-    PlaceOrder.product = PRODUCT;
+  PlaceOrder(order: ShoppingCart ):any {
 
-    return this.http.post<ShoppingCartResponse>(
-     `${this.APIURL}/order` ,
-      PlaceOrder
-    );
-
-    //   this.name = "wertfygu";
-    // this.surname= "fgjkl";
-    // this.gender = "frjk";
-    // this.phone = "rtjkl";
-    // this.email = "ertf;";
-    // this.city = "seu";
-    // this.province = "qwj";
-    // this.township = "dgfhjk";
-    // this.street = "sfjk";
-    // this.code = "esdrhjk";
-    // this.product = []
+    return this.http.post(`${this.APIURL}/order`, order);
   }
+  
 }

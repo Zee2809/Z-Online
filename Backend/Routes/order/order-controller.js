@@ -25,12 +25,12 @@ exports.PostOrder = async (req, res) => {
       township:req.body.township,
       street:req.body.street,
       code:req.body.code,
-      product :req.body.product[{
-              hoodie:"Hoodie",
-              sweater:"Sweater",
-              tshirt:"T-Shirt",
-              cropjersy:"Crop-Jersey"
-          }]
+      // product :req.body.product[{
+      //         hoodie:"Hoodie",
+      //         sweater:"Sweater",
+      //         tshirt:"T-Shirt",
+      //         cropjersy:"Crop-Jersey"
+      //     }]
 
     })
 
