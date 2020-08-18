@@ -12,10 +12,22 @@ export class ZOnlineService {
   APIURL: string = environment.URL;
 
   constructor(private http: HttpClient) {}
+  PlaceOrder(
+    name:string,
+    surname:string,
+    gender:string,
+    phone:string,
+    email:string,
+    city:string,
+    province:string,
+    township:string,
+    street:string,
+    code:string,
+    product:[],
+   ) {
+let order : ShoppingCart = new ShoppingCart;
 
-  PlaceOrder(order: ShoppingCart ):any {
-
-    return this.http.post(`${this.APIURL}/order`, order);
+    return this.http.post(`${this.APIURL}/order`, order );
   }
   
 }

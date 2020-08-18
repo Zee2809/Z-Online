@@ -1,7 +1,9 @@
+import { ShoppingCartResponse } from './shopping-cart-response';
 import { Component, OnInit } from "@angular/core";
 import { ZOnlineService } from "../../z-online.service";
+import { ShoppingCart } from './shopping-cart';
 
-import { from } from "rxjs";
+
 @Component({
   selector: "app-shopping-cart",
   templateUrl: "./shopping-cart.component.html",
@@ -22,6 +24,8 @@ export class ShoppingCartComponent implements OnInit {
 
   constructor(private onlineService: ZOnlineService) {}
 
+  orderrespose:ShoppingCart = new ShoppingCart;
+
   ngOnInit() {}
   Order() {
     this.onlineService
@@ -38,8 +42,21 @@ export class ShoppingCartComponent implements OnInit {
         this.code,
         this.product
       )
-      .subscribe(data => {
+      .subscribe((data:ShoppingCart) => {
         console.log(data);
+        this.orderrespose = data;
+        this.orderrespose.name = this.name;
+        this.orderrespose.surname = this.surname;
+        this.orderrespose.gender = this.gender;
+        this.orderrespose.phone = this.phone;
+        this.orderrespose.email = this.email;
+        this.orderrespose.city = this.city;
+        this.orderrespose.province = this.province;
+        this.orderrespose.township = this.township;
+        this.orderrespose.street = this.street;
+        this.orderrespose.code = this.code
+        console.log(this.orderrespose);
+       
       });
   }
 }
